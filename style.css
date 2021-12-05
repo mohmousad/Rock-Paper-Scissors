@@ -1,0 +1,110 @@
+/* ========== General ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+section {
+    height: 100vh;
+    background-color: rgb(41, 199, 41);
+    font-family: sans-serif;
+}
+
+/* ========== Score ========== */
+.score {
+    color: white;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+.score h2 {
+    font-size: 30px;
+    padding: 15px;
+}
+
+.score p {
+    font-size: 25px;
+}
+
+
+/* ========== Start Screen ========== */
+.startScreen {
+    color: white;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 40px;
+    transition: opacity 0.5s ease;    
+}
+
+.startScreen button {
+    width: 200px;
+    height: 50px;
+    border: none;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.startScreen button:hover {
+    background-color: rgb(60, 119, 248);
+}
+
+/* ========== Match ========== */
+
+.match {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: opacity 0.5s ease 0.5s;  
+}
+
+.winner {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+
+.hands, .options {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.match button {
+    width: 100px;
+    height: 50px;
+    border: none;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.match button:hover {
+    background-color: rgb(60, 119, 248);
+}
+
+.player-hand {
+    transform: rotateZ(135deg);
+}
+
+.computer-hand {
+    transform: rotateZ(-135deg) rotateY(180deg);
+}
+
+div.fadeOut {
+    opacity: 0;
+    pointer-events: none;
+}
+
+div.fadeIn {
+    opacity: 1;
+    pointer-events: all;
+}
